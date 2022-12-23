@@ -20,7 +20,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    if (theme == 'dark') {
+    if (theme === 'dark') {
       document.getElementsByTagName('html')[0].classList.add('dark')
       localStorage.theme = 'dark'
     } else {
@@ -30,7 +30,7 @@ function App() {
   }, [theme])
 
   const toggleDarkMode = () => {
-    if (theme == 'dark') {
+    if (theme === 'dark') {
       setTheme('light')
     } else {
       setTheme('dark')
@@ -44,7 +44,7 @@ function App() {
           onClick={toggleDarkMode}
           className="text-4xl"
         >
-          {theme == 'dark' ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />}
+          {theme === 'dark' ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />}
         </button>
       </div>
       <div className="flex flex-col sm:flex-row justify-center items-center border-t border-b py-8 px-12 border-gray-300">
@@ -57,13 +57,13 @@ function App() {
             <p>Self-made Software Engineer</p>
           </div>
           <div className='text-2xl'>
-            <a className="hover:text-gray-500 mx-3" target="_blank" href="https://github.com/nuriddinislamov">
+            <a className="hover:text-gray-500 mx-3" target="_blank" rel='noreferrer' href="https://github.com/nuriddinislamov">
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a className="hover:text-gray-500 mx-3" target="_blank" href="https://linkedin.com/in/nuriddinislamov">
+            <a className="hover:text-gray-500 mx-3" target="_blank" rel='noreferrer' href="https://linkedin.com/in/nuriddinislamov">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a className="hover:text-gray-500 mx-3" target="_blank" href="https://read.nuriddinislamov.com/blog">
+            <a className="hover:text-gray-500 mx-3" target="_blank" rel='noreferrer' href="https://read.nuriddinislamov.com/blog">
               <FontAwesomeIcon icon={faBookmark} />
             </a>
           </div>
