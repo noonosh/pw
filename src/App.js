@@ -38,38 +38,41 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen w-screen text-gray-800 transition-colors duration-350 ease-out dark:bg-gray-800 dark:text-white">
-      <div className="fixed cursor-pointer top-5 right-8">
-        <button
-          onClick={toggleDarkMode}
-          className="text-4xl"
-        >
-          {theme === 'dark' ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />}
-        </button>
-      </div>
-      <div className="flex flex-col sm:flex-row justify-center items-center border-t border-b py-8 px-12 border-gray-300">
-        <div>
-          <img class="w-36 h-36 rounded-full sm:mr-5 mb-5 sm:mb-0" src={profile} alt="Nuriddin" />
+    <>
+      <div className="flex flex-col justify-center items-center h-screen w-screen text-gray-800 transition-colors duration-350 ease-out dark:bg-gray-800 dark:text-white">
+        <div className="fixed cursor-pointer top-5 right-8">
+          <button
+            onClick={toggleDarkMode}
+            className="text-4xl"
+          >
+            {theme === 'dark' ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />}
+          </button>
         </div>
-        <div className='flex flex-col justify-between h-32 text-center'>
+        <div className="flex flex-col sm:flex-row justify-center items-center border-t border-b py-8 sm:px-12 border-gray-300">
           <div>
-            <h2 className='uppercase font-extrabold text-2xl'>Nuriddin Islamov</h2>
-            <p>Self-made Software Engineer</p>
+            <img class="w-36 h-36 rounded-full sm:mr-5 mb-5 sm:mb-0" src={profile} alt="Nuriddin" />
           </div>
-          <div className='text-2xl'>
-            <a className="hover:text-gray-500 mx-3" target="_blank" rel='noreferrer' href="https://github.com/nuriddinislamov">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a className="hover:text-gray-500 mx-3" target="_blank" rel='noreferrer' href="https://linkedin.com/in/nuriddinislamov">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a className="hover:text-gray-500 mx-3" target="_blank" rel='noreferrer' href="https://read.nuriddinislamov.com/blog">
-              <FontAwesomeIcon icon={faBookmark} />
-            </a>
+          <div className='flex flex-col h-32 text-center'>
+            <div>
+              <h2 className="uppercase font-extrabold text-2xl">Nuriddin Islamov</h2>
+              <p className='text-gray-500 mb-2 dark:text-gray-400'>Self-made Software Engineer</p>
+              <a className="inline-block text-sm hover:underline mb-5 after:content-['_↗']" rel="noreferrer" target="_blank" href="https://read.nuriddinislamov.com/about">Read about me</a>
+            </div>
+            <div className='text-2xl'>
+              <a className="hover:text-gray-500 mx-3 dark:hover:text-gray-300" target="_blank" rel='noreferrer' href="https://github.com/nuriddinislamov">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a className="hover:text-gray-500 mx-3 dark:hover:text-gray-300" target="_blank" rel='noreferrer' href="https://linkedin.com/in/nuriddinislamov">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a className="hover:text-gray-500 mx-3 dark:hover:text-gray-300" target="_blank" rel='noreferrer' href="https://read.nuriddinislamov.com/blog">
+                <FontAwesomeIcon icon={faBookmark} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
