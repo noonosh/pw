@@ -59,7 +59,7 @@ function App() {
               <a className="inline-block text-sm hover:underline mb-5 after:content-['_↗']" rel="noreferrer" target="_blank" href="https://read.nuriddinislamov.com/about">Read about me</a>
             </div>
             <div className='text-2xl'>
-              <a className="hover:text-gray-500 mx-3 dark:hover:text-gray-300" href="mailto:nuriddinislamov@icloud.com">
+              <a className="hover:text-gray-500 mx-3 dark:hover:text-gray-300" href="mailto:hi@nuriddinislamov.com">
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
               <a className="hover:text-gray-500 mx-3 dark:hover:text-gray-300" target="_blank" rel='noreferrer' href="https://github.com/nuriddinislamov">
