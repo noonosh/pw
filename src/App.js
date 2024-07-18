@@ -56,7 +56,7 @@ function App() {
             <div>
               <h2 className="uppercase font-extrabold text-2xl">Nuriddin Islamov</h2>
               <p className='text-gray-500 mb-2 dark:text-gray-400'>Software Engineer | Finance enthusiast</p>
-              <a className="inline-block text-sm hover:underline mb-5 after:content-['_↗']" rel="noreferrer" target="_blank" href="https://read.nuriddinislamov.com/about">Read about me</a>
+              <a className="inline-block text-sm hover:underline mb-5 after:content-['_↗']" rel="noreferrer" target="_blank" href="https://legacy.read.nuriddinislamov.com/about">Read about me</a>
             </div>
             <div className='text-2xl'>
               <a className="hover:text-gray-500 mx-3 dark:hover:text-gray-300" href="mailto:hi@nuriddinislamov.com">
